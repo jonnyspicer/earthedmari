@@ -69,6 +69,11 @@ blockquote{
   padding: 20px;
 }
 
+.copy-wrapper{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 footer{
   flex-shrink: 0;
 }
@@ -85,7 +90,7 @@ a{
 p, span{
   padding: 10px 0;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.8;
   &:first-of-type{
     padding: 0;
   }

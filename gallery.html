@@ -3,15 +3,16 @@ layout: default
 title: Gallery
 permalink: /gallery
 ---
-<div class="blog">
-  <h1 class="pink">gallery.</h1>
+<div class="gallery">
+  <h1 class="pink">gallery</h1>
 
-  <ul class="recent-posts">
-    {% for post in site.categories.blog offset: 0 limit: 10 %}
-      <li>
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-        <span>{{ post.date | date_to_string }} | {{ post.tags | sort | join: ", " }}</span>
-      </li>
-      {% endfor %}
-  </ul>
+  <div class="image-grid">
+    {% for creation in site.creations %}
+      <a href="{{ creation.url }}">
+        <div class="image" style="background-image: url({{ creation.image }});">
+
+        </div>
+      </a>
+    {% endfor %}
+  </div>
 </div>

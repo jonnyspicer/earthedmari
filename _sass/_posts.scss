@@ -9,12 +9,6 @@
       }
     }
   }
-
-  &.post-blog{
-    ul{
-      list-style-type: katakana;
-    }
-  }
 }
 .PageNavigation {
   font-size: 16px;
@@ -32,4 +26,5 @@
 
 .PageNavigation .next {
   text-align: right;
+  float: right;
 }

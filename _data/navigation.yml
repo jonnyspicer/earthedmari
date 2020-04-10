@@ -2,7 +2,13 @@
   link: /
 - name: Gallery
   link: /gallery
+- name: Videos
+  link: /videos
+- name: Art Therapy
+  link: /therapy
 - name: About Me
   link: /about
+# - name: Store
+#   link: /store
 - name: Contact
   link: /contact

@@ -1,0 +1,19 @@
+---
+layout: default
+title: Videos
+permalink: /videos/
+---
+
+<h1 class="light_blue">videos</h1>
+
+<div class="video">
+    {% for video in site.videos %}
+
+    <div class="video-wrapper">
+        <h2>{{ video.title }}</h2>
+        <iframe src="{{ video.source }}" width="700" height="480" frameborder="0" allowfullscreen=""></iframe>
+        <p>{{ video.description}} </p>
+    </div>
+
+    {% endfor %}
+</div>

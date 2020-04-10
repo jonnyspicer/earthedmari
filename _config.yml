@@ -27,10 +27,12 @@ sass:
  style: compressed
 
 collections:
-  authors:
+  creations:
     output: true
-  blog_names:
-    output: true
+    permalink: /creations/:path/
+  videos:
+    output: false
+  
 
 permalink: /:categories/:year/:month/:day/:title
 
@@ -47,7 +49,6 @@ defaults:
 
 # Build settings
 markdown: kramdown
-# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
