@@ -12,8 +12,9 @@
     </div>
   </div>
   <nav class="desktop-nav">
+    <!-- <a href="/"><img src="/assets/img/logo_1.svg"></a> -->
     {% for item in site.data.navigation %}
-    <a href="{{ item.link }}">
+    <a href="{{ item.link }}" {% if forloop.last == true %} target="_blank" {% endif %}>
       <div>
         <p>
           {{ item.name }}

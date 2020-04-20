@@ -1,6 +1,0 @@
----
-layout: creation
-image: https://instagram.fjer1-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/90673091_505146046822822_3465515698403165463_n.jpg?_nc_ht=instagram.fjer1-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=LGR38u0RoZ8AX_HbnQN&oh=d629977120d9669a528719f074307362&oe=5EAE9478
-title: Test
----
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique ac leo quis eleifend. Suspendisse metus mi, gravida quis volutpat sed, feugiat sollicitudin magna. Ut id viverra quam, eu tempor lacus. Maecenas ut vehicula lorem. Nam luctus ullamcorper pharetra. Integer justo odio, fermentum vitae arcu et, sagittis commodo ipsum. Sed molestie sed dui in finibus. Nunc sit amet ex euismod, scelerisque lectus at, faucibus erat. Pellentesque sed lorem vitae mauris scelerisque feugiat id vel sapien. Nam ultricies dictum nisi at dignissim. Aenean rhoncus sem ut justo molestie, a blandit massa rhoncus. Nulla mattis tincidunt molestie. Nulla a ullamcorper quam. Praesent mauris ante, pellentesque nec iaculis ac, commodo non nisi.
