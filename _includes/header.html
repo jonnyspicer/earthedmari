@@ -1,7 +1,7 @@
 <header>
   <div class="mobile-header">
     <div>
-      <a href="/">{{ site.title }}</a>
+      <a href="/" class="mobile-logo"><img src="/assets/img/logo_1_cropped_resized.jpeg"></a>
     </div>
     <div class="toggle">
       <span>
@@ -12,15 +12,55 @@
     </div>
   </div>
   <nav class="desktop-nav">
-    <!-- <a href="/"><img src="/assets/img/logo_1.svg"></a> -->
-    {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if forloop.last == true %} target="_blank" {% endif %}>
+    <a href="/gallery">
       <div>
         <p>
-          {{ item.name }}
+          Gallery
         </p>
       </div>
     </a>
-    {% endfor %}
+
+    <a href="/videos">
+      <div>
+        <p>
+          Videos
+        </p>
+      </div>
+    </a>
+
+    <a href="/therapy">
+      <div>
+        <p>
+          Art Therapy
+        </p>
+      </div>
+    </a>
+
+    <a href="/" class="logo"><img src="/assets/img/logo_2_cropped_resized.jpeg"></a>
+
+    <a href="/about">
+      <div>
+        <p>
+          About Me
+        </p>
+      </div>
+    </a>
+
+    <a href="/contact">
+      <div>
+        <p>
+          Contact
+        </p>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/earthed.mari/" target="_blank">
+      <div>
+        <p>
+          Instagram
+        </p>
+      </div>
+    </a>
+
   </nav>
 </header>

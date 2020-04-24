@@ -9,7 +9,10 @@ header {
     a {
       color: $color_black;
       text-decoration: none;
-      font-size: 24px;
+      font-size: 55px;
+      img{
+        height: 40px;
+      }
     }
 
     .toggle {
@@ -84,8 +87,13 @@ header {
   nav.desktop-nav {
     max-width: 1600px;
     margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    grid-auto-flow: column;
+
+    .logo{
+      display: none;
+      justify-self: center;
+    }
 
     div {
       text-align: center;
@@ -95,7 +103,7 @@ header {
         display: inline-block;
         color: $color_black;
         font-size: 16px;
-        line-height: 50px;
+        line-height: 250px;
         padding: 0;
         margin: 0;
         white-space: nowrap;
@@ -117,7 +125,19 @@ header {
     }
 
     @media only screen and (max-width: 1000px){
-      justify-content: space-evenly;
+      grid-template-rows: min-content min-content;
+      .logo{
+        grid-row: 1;
+        grid-column: 7 / -1;
+      }
+      a:not(.logo){
+        grid-row: 2;
+      }
+      div {
+        p {
+          line-height: 50px;
+        }
+      }
     }
 
     @media only screen and (max-width: 700px) {
@@ -125,8 +145,11 @@ header {
     }
 
     @media only screen and (min-width: 701px){
+      .logo{
+        display: inline;
+      }
       >a {
-        padding: 0 20px;
+        padding: 20px;
       }
     }
   }
