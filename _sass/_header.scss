@@ -1,7 +1,7 @@
 header {
   .mobile-header {
     height: 52px;
-    padding: 0 20px;
+    padding: 10px 20px;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@ header {
     .toggle {
       display: flex;
       position: absolute;
-      top: 14px;
+      top: 24px;
       right: 20px;
 
       span {
@@ -166,7 +166,7 @@ header {
 
         div {
           text-align: unset;
-          padding: 0 0 0 20px;
+          padding: 0 0 0 30px;
           border-left: none;
           display: block;
           background-color: $color_white;

@@ -41,6 +41,7 @@ h1 {
 h1, h2{
   font-family: $font-stack-header;
   color: $color_black;
+  margin-top: 0.2em;
 }
 
 h3, h4, h5, h6 {
@@ -72,6 +73,23 @@ blockquote{
 .copy-wrapper{
   max-width: 800px;
   margin: 0 auto;
+
+  &--about{
+    max-width: unset;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 20px;
+    justify-items: center;
+    align-items: center;
+
+    img{
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: 1000px){
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 footer{

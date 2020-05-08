@@ -1,1 +1,4 @@
 *.vscode
+.sass-cache/
+*.patch
+_site/
