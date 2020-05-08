@@ -9,8 +9,8 @@ permalink: /gallery
   <div class="image-grid">
     {% for creation in site.creations %}
       <a href="{{ creation.url }}">
-        <div class="image" style="background-image: url({{ creation.image }});">
-
+        <div class="image">
+          <img src="{{ creation.image }}">
         </div>
       </a>
     {% endfor %}
