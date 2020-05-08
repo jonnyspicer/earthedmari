@@ -10,7 +10,8 @@ header {
       color: $color_black;
       text-decoration: none;
       font-size: 55px;
-      img{
+
+      img {
         height: 40px;
       }
     }
@@ -90,53 +91,42 @@ header {
     display: grid;
     grid-auto-flow: column;
 
-    .logo{
+    .logo {
       display: none;
       justify-self: center;
     }
 
-    div {
+    a {
+      display: inline-block;
+      color: $color_black;
+      font-size: 16px;
+      line-height: 250px;
       text-align: center;
-      height: 100%;
+      text-decoration: none;
+      white-space: nowrap;
 
-      p {
-        display: inline-block;
-        color: $color_black;
-        font-size: 16px;
-        line-height: 250px;
-        padding: 0;
-        margin: 0;
-        white-space: nowrap;
-      }
 
       &:hover,
       &:focus,
       &:active {
-        p {
-          color: $color_pink;
-        }
-      }
-
-      a {
-        &:active div p {
-          color: $color_pink;
-        }
+        color: $color_pink;
       }
     }
 
-    @media only screen and (max-width: 1000px){
+    @media only screen and (max-width: 1000px) {
       grid-template-rows: min-content min-content;
-      .logo{
+
+      .logo {
         grid-row: 1;
         grid-column: 7 / -1;
       }
-      a:not(.logo){
+
+      a:not(.logo) {
         grid-row: 2;
       }
-      div {
-        p {
-          line-height: 50px;
-        }
+
+      a {
+        line-height: 50px;
       }
     }
 
@@ -144,10 +134,11 @@ header {
       display: none;
     }
 
-    @media only screen and (min-width: 701px){
-      .logo{
+    @media only screen and (min-width: 701px) {
+      .logo {
         display: inline;
       }
+
       >a {
         padding: 20px;
       }
@@ -159,61 +150,52 @@ header {
       display: block;
       position: absolute;
       height: 0;
-      transition: height 0.5s;
+      transition: max-height 0.5s;
 
       a {
         text-decoration: none;
+        text-align: unset;
+        padding: 0 0 0 30px;
+        border-left: none;
+        display: block;
+        background-color: $color_white;
+        opacity: 0;
+        transition: opacity 0.5s, max-height 0.5s;
+        width: 100%;
+        max-height: 0;
+        color: $color_dark_blue;
 
-        div {
-          text-align: unset;
-          padding: 0 0 0 30px;
-          border-left: none;
-          display: block;
-          background-color: $color_white;
-          opacity: 0;
-          transition: opacity 0.5s;
-          width: 100%;
-
-          p {
-            color: $color_dark_blue;
-            display: none;
-          }
-
-          &:last-child {
-            border-right: none;
-          }
+        &:last-child {
+          border-right: none;
         }
+
       }
 
       &.expanded {
-        height: 50px;
+        max-height: 100px;
         margin: 0 0 -20px;
         z-index: 100;
         width: calc(100% - 20px);
 
         a:last-child {
-          div {
-            padding-bottom: 20px;
-            position: relative;
+          padding-bottom: 20px;
+          position: relative;
 
-            &::after {
-              content: '';
-              position: absolute;
-              top: 55px;
-              left: calc(50% - 64px);
-              right: calc(50% - 64px);
-              border: solid 1px $color_grey_very_light;
-            }
+          &::after {
+            content: '';
+            position: absolute;
+            top: 55px;
+            left: calc(50% - 64px);
+            right: calc(50% - 64px);
+            border: solid 1px $color_grey_very_light;
           }
+
         }
 
-        div {
+        a {
           opacity: 1;
-
-          p {
-            display: inline;
-            text-decoration: none;
-          }
+          max-height: 50px;
+          margin: -1px 0;
         }
       }
     }
