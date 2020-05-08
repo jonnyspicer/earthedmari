@@ -10,7 +10,7 @@ permalink: /gallery
     {% for creation in site.creations %}
       <a href="{{ creation.url }}">
         <div class="image">
-          <img src="{{ creation.image }}">
+          <img src="{{ creation.image }}" alt="{{ creation.alt-text}} ">
         </div>
       </a>
     {% endfor %}
